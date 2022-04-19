@@ -129,7 +129,14 @@
                    "Sylhet_Best time duration to travel in Sylhet is January-March.\n\nIt is the best time to go to Sylhet due to the excellent all-round climate conditions, and it's not likely to be at its busiest as it's not during the height of the peak travel season. In summer, the temperature in Sylhet can rise as high as 37℃ (99℉)."],
      "context": [""]
     },
-     {"tag": "options",
+    {"tag": "place-info",
+     "patterns": ["tell me details about ahsan manzil", "send me info about naval beach", "can you tell about","hey, wanna know about nafa khum"],
+     "responses": ["ahsan manzil_Ahsan Manzil is the erstwhile official residential palace and seat of the Nawab of Dhaka. The building is situated at Kumartoli along the banks of the Buriganga River in Dhaka, Bangladesh. Construction was started in 1859 and was completed in 1872. It was constructed in the Indo-Saracenic Revival architecture. It has been designated as a national museum.\n\nClick here to know more: https://en.wikipedia.org/wiki/Ahsan_Manzil",
+                   "inani beach_Inani Beach, part of Cox's Bazar Beach, is an 18-kilometre-long (11 mi) sea beach in Ukhia Upazila of Cox's Bazar District, Bangladesh. It has a lot of coral stones, which are very sharp. These coral stones look black and green, and they are found in summer or rainy seasons.\n\nClick here to know more: https://en.wikipedia.org/wiki/Inani_Beach",
+                   "nafa khum_Nafa-khum is a waterfall in Bangladesh on the Remaikree River, a tributary of the Sangu River. It is among the largest waterfalls in the country by volume of water falling. The wild hilly Remaikree river suddenly falls down here about 25–30 feet or 7.62-9.144 meters. The word Ngafa in native Marma language means Baghair fish/ Dwarf goonch and Khong means Ground. A special type of flying fish, whose local name is nating, is found at the bottom in a small cave as they swim against the stream but cannot jump over the height of the fall.\n\nClick here to know more: https://en.wikipedia.org/wiki/Nafa-khum"],
+     "context": [""]
+    },
+    {"tag": "options",
      "patterns": ["How you could help me?","Who are you?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
      "responses": ["Hello! I am an AI Travel Assistant. Here to help you plan the perfect next trip in Dhaka, Chittagong, Sylhet, Cox’s Bazar, and bandarban by showing you my favourite places, hotels, malls, and restaurants."],
      "context": [""]
