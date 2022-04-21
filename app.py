@@ -119,7 +119,7 @@ def callSenderApi(senderPsid,response,d):
         r = requests.post(url, json=payload, headers= headers)
         print(r.text)
     else:    
-        if d=="" and (tag == "place-info" or tag == "places" or tag == "hotels" or tag == "famous_restaurant" or tag == "shopping_malls" or tag == "famous_foods" or tag == "tour-packages" or tag == "best-time-to-travel"):
+        if d=="" and (tag == "transport" or tag == "place-info" or tag == "places" or tag == "hotels" or tag == "famous_restaurant" or tag == "shopping_malls" or tag == "famous_foods" or tag == "tour-packages" or tag == "best-time-to-travel"):
             payload={
                 'recipient':{'id': senderPsid},
                 'message': {"text":"⛔ Sorry! Arena is missing. Please provide appropriate arena. I can guide you only for the following districts:\n\n ✅ Dhaka\n ✅ Bandarban\n ✅ Cox's Bazar\n ✅ Sylhet \n ✅ Chittagong"},
@@ -129,7 +129,7 @@ def callSenderApi(senderPsid,response,d):
             url = 'https://graph.facebook.com/v13.0/me/messages?access_token={}'.format(PAGE_ACCESS_TOKEN)
             r = requests.post(url, json=payload, headers= headers)
             print(r.text) 
-        elif d!="" and (tag == "place-info" or tag == "places" or tag == "hotels" or tag == "famous_restaurant" or tag == "shopping_malls" or tag == "famous_foods" or tag == "tour-packages" or tag == "best-time-to-travel"):
+        elif d!="" and (tag == "transport" or tag == "place-info" or tag == "places" or tag == "hotels" or tag == "famous_restaurant" or tag == "shopping_malls" or tag == "famous_foods" or tag == "tour-packages" or tag == "best-time-to-travel"):
             str1 ="" 
            
             for ele in response: 
@@ -145,7 +145,7 @@ def callSenderApi(senderPsid,response,d):
             url = 'https://graph.facebook.com/v13.0/me/messages?access_token={}'.format(PAGE_ACCESS_TOKEN)
             r = requests.post(url, json=payload, headers= headers)
             print(r.text)
-        elif d!="" and (tag != "place-info" or tag != "places" or tag != "hotels" or tag != "famous_restaurant" or tag != "shopping_malls" or tag != "famous_foods" or tag != "tour-packages" or tag != "best-time-to-travel"):
+        elif d!="" and (tag != "transport" or tag != "place-info" or tag != "places" or tag != "hotels" or tag != "famous_restaurant" or tag != "shopping_malls" or tag != "famous_foods" or tag != "tour-packages" or tag != "best-time-to-travel"):
             payload={
                 'recipient':{'id': senderPsid},
                 'message': {"text":"⛔ Sorry! Please enter proper query with the arena. I can help you only for the following cases:\n\n 🔹 Hotels\n 🔹 Places\n 🔹 Restaurants\n 🔹 Shopping Malls\n 🔹 Famous foods\n 🔹 Tour packages\n 🔹 Best time duration for traveling"},
@@ -155,7 +155,7 @@ def callSenderApi(senderPsid,response,d):
             url = 'https://graph.facebook.com/v13.0/me/messages?access_token={}'.format(PAGE_ACCESS_TOKEN)
             r = requests.post(url, json=payload, headers= headers)
             print(r.text)
-        elif d=="" and (tag != "place-info" or tag != "places" or tag != "hotels" or tag != "famous_restaurant" or tag != "shopping_malls" or tag != "famous_foods" or tag != "tour-packages" or tag != "best-time-to-travel"):    
+        elif d=="" and (tag != "transport" or tag != "place-info" or tag != "places" or tag != "hotels" or tag != "famous_restaurant" or tag != "shopping_malls" or tag != "famous_foods" or tag != "tour-packages" or tag != "best-time-to-travel"):    
             payload={
                 'recipient':{'id': senderPsid},
                 'message': {"text":"⛔ Sorry! Please mention appropriate query with proper arena. I can guide you only for the following districts:\n\n ✅ Dhaka\n ✅ Bandarban\n ✅ Cox's Bazar\n ✅ Sylhet \n ✅ Chittagong.\n\n I can help you only for the following cases:\n\n 🔹 Hotels\n 🔹 Places\n 🔹 Restaurants\n 🔹 Shopping Malls\n 🔹 Famous foods\n 🔹 Tour packages\n 🔹 Best time duration for traveling"},
@@ -170,7 +170,7 @@ def callSenderApi(senderPsid,response,d):
 def handleMessage(senderPsid, receivedMessage) :
     
     if 'text' in receivedMessage :
-        dis = ["sylhet","Sylhet","sylet","Sylet","Silet","silet","silhet","Silhet", "dhaka", "Dhaka","daka","Daka","Dhk","dhk","dhak","Dhak","Bandarban", "bandarban","bandorbon", "Bandorbon", "Banorbon", "banorbon","Bandarbon","bandarbon","chittagong", "Chittagong","chitagong","citagong","ctg","CTG", "chitagang", "cox's bazar", "Cox's bazar","Cox Bazar","cox bazar","coxs bazar", "Coxs bazar", "coxbazar","Coxbazar","coxsbazar","Coxsbazar","cox","Cox","ahsan manzil","Ahsan Manzil","inani beach", "Inani Beach", "nafa khum", "Nafa Khum","nafakhum","Nafakhum"]
+        dis = ["sylhet","Sylhet","sylet","Sylet","Silet","silet","silhet","Silhet", "dhaka", "Dhaka","daka","Daka","Dhk","dhk","dhak","Dhak","Bandarban", "bandarban","bandorbon", "Bandorbon", "Banorbon", "banorbon","Bandarbon","bandarbon","chittagong", "Chittagong","chitagong","citagong","ctg","CTG", "chitagang", "cox's bazar", "Cox's bazar","Cox Bazar","cox bazar","coxs bazar", "Coxs bazar", "coxbazar","Coxbazar","coxsbazar","Coxsbazar","cox","Cox","ahsan manzil","Ahsan Manzil","inani beach", "Inani Beach","inane beach" "nafa khum", "Nafa Khum","nafakhum","Nafakhum"]
         a= receivedMessage['text']
         d=""
         for i,n in enumerate(dis):

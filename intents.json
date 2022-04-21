@@ -130,10 +130,18 @@
      "context": [""]
     },
     {"tag": "place-info",
-     "patterns": ["tell me details about ahsan manzil", "send me info about", "help me by details info of","can you tell about","hey, wanna know about nafa khum"],
+     "patterns": ["tell me details about ahsan manzil", "send me info about", "help me by details info of","can you tell about","hey, wanna know about nafa khum","nafa khum","inani beach","ahsan manzil"],
      "responses": ["ahsan manzil_Ahsan Manzil is the erstwhile official residential palace and seat of the Nawab of Dhaka. The building is situated at Kumartoli along the banks of the Buriganga River in Dhaka, Bangladesh. Construction was started in 1859 and was completed in 1872. It was constructed in the Indo-Saracenic Revival architecture. It has been designated as a national museum.\n\nClick here to know more: https://en.wikipedia.org/wiki/Ahsan_Manzil",
                    "inani beach_Inani Beach, part of Cox's Bazar Beach, is an 18-kilometre-long (11 mi) sea beach in Ukhia Upazila of Cox's Bazar District, Bangladesh. It has a lot of coral stones, which are very sharp. These coral stones look black and green, and they are found in summer or rainy seasons.\n\nClick here to know more: https://en.wikipedia.org/wiki/Inani_Beach",
                    "nafa khum_Nafa-khum is a waterfall in Bangladesh on the Remaikree River, a tributary of the Sangu River. It is among the largest waterfalls in the country by volume of water falling. The wild hilly Remaikree river suddenly falls down here about 25–30 feet or 7.62-9.144 meters. The word Ngafa in native Marma language means Baghair fish/ Dwarf goonch and Khong means Ground. A special type of flying fish, whose local name is nating, is found at the bottom in a small cave as they swim against the stream but cannot jump over the height of the fall.\n\nClick here to know more: https://en.wikipedia.org/wiki/Nafa-khum"],
+     "context": [""]
+    },
+    {"tag": "transport",
+     "patterns": ["bus to go to", "how to travel to", "how to go to", "vehickles", "buses", "transports to travel to", "transport for tourists","transports to visit", "transports", "transport goes to"],
+     "responses": ["chittagong_These are the buses you can consider for going Dhaka to Chittagon\n◉ Abdullah Paribahan\n◉ Ena Transport (Pvt) Ltd\n◉ Hanif Enterprise\n◉ Royal Coach\n◉ Saintmartin Travels\n◉ Shohagh Paribahan\n◉ Soudia Coach Service.\n◉ Tuba Line.\n\nClick here to know more and book tickets: https://www.shohoz.com/bus-tickets/dhaka-to-chittagong",
+                   "sylhet_These are the buses you can consider for going Dhaka to Sylhet: \n◉ Saudia Air Con\n◉ Ena Transport (Pvt) Ltd\n◉ Hanif Enterprise\n◉ Royal Coach\n\nClick here to know more and book tickets: https://www.shohoz.com/bus-tickets/dhaka-to-sylhet",
+                   "cox's bazar_These are the buses you can consider for going Dhaka to Coxs Bazar:\n◉ Saudia Air Con\n◉ Ena Transport (Pvt) Ltd\n◉ Hanif Enterprise\n◉ Royal Coach\n◉ Saintmartin Travels\n◉ Shohagh Paribahan\n◉ Soudia Coach Service\n◉ Tuba Line.\n\nClick here to know more and book tickets: https://www.shohoz.com/bus-tickets/dhaka-to-coxs-bazar",
+                   "bandarban_These are the buses you can consider for going Dhaka to Bandarban:\n◉ Hanif Enterprise\n◉ Royal Coach\n◉ Saintmartin Travels\n◉ Soudia Coach Service\n\nClick here to know more and book tickets: https://www.shohoz.com/bus-tickets/dhaka-to-bandarban"],
      "context": [""]
     },
     {"tag": "options",
