@@ -146,7 +146,7 @@
     },
     {"tag": "options",
      "patterns": ["How you could help me?","Who are you?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
-     "responses": ["Hello! I am an AI Travel Assistant. Here to help you plan the perfect next trip in Dhaka, Chittagong, Sylhet, Cox’s Bazar, and bandarban by showing you my favourite places, hotels, malls, and restaurants."],
+     "responses": ["Hello! I am an AI Travel Assistant. Here to help you plan the perfect trip."],
      "context": [""]
     }       
 ]

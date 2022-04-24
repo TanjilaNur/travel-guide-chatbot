@@ -148,7 +148,7 @@ def callSenderApi(senderPsid,response,d):
         elif d!="" and (tag != "transport" or tag != "place-info" or tag != "places" or tag != "hotels" or tag != "famous_restaurant" or tag != "shopping_malls" or tag != "famous_foods" or tag != "tour-packages" or tag != "best-time-to-travel"):
             payload={
                 'recipient':{'id': senderPsid},
-                'message': {"text":"⛔ Sorry! Please enter proper query with the arena. I can help you only for the following cases:\n\n 🔹 Hotels\n 🔹 Places\n 🔹 Restaurants\n 🔹 Shopping Malls\n 🔹 Famous foods\n 🔹 Tour packages\n 🔹 Best time duration for traveling"},
+                'message': {"text":"⛔ Sorry! Please enter proper query with the arena. I can help you only for the following cases:\n\n 🔹 Hotels\n 🔹 Places\n 🔹 Restaurants\n 🔹 Shopping Malls\n 🔹 Famous foods\n 🔹 Tour packages\n 🔹 Transports\n 🔹 Best time duration for traveling"},
                 'messaging_type':'RESPONSE'
             }
             headers= {'content-type': 'application/json'}
@@ -158,7 +158,7 @@ def callSenderApi(senderPsid,response,d):
         elif d=="" and (tag != "transport" or tag != "place-info" or tag != "places" or tag != "hotels" or tag != "famous_restaurant" or tag != "shopping_malls" or tag != "famous_foods" or tag != "tour-packages" or tag != "best-time-to-travel"):    
             payload={
                 'recipient':{'id': senderPsid},
-                'message': {"text":"⛔ Sorry! Please mention appropriate query with proper arena. I can guide you only for the following districts:\n\n ✅ Dhaka\n ✅ Bandarban\n ✅ Cox's Bazar\n ✅ Sylhet \n ✅ Chittagong.\n\n I can help you only for the following cases:\n\n 🔹 Hotels\n 🔹 Places\n 🔹 Restaurants\n 🔹 Shopping Malls\n 🔹 Famous foods\n 🔹 Tour packages\n 🔹 Best time duration for traveling"},
+                'message': {"text":"⛔ Sorry! Please mention appropriate query with proper arena. I can guide you only for the following districts:\n\n ✅ Dhaka\n ✅ Bandarban\n ✅ Cox's Bazar\n ✅ Sylhet \n ✅ Chittagong.\n\n I can help you only for the following cases:\n\n 🔹 Hotels\n 🔹 Places\n 🔹 Restaurants\n 🔹 Shopping Malls\n 🔹 Famous foods\n 🔹 Tour packages\n 🔹 Transports\n 🔹 Best time duration for traveling"},
                 'messaging_type':'RESPONSE'
             }
             headers= {'content-type': 'application/json'}
